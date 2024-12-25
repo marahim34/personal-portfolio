@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <div>
+        <nav id="navbar">
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#fun-facts">Fun Facts</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#eorl-experience">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobile-navbar">
+        <button onclick="menuToggle()" id="menu-toggle" type="button">☰</button>
+        <nav class="toggle-entry">
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#fun-facts">Fun Facts</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#eorl-experience">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Homepage -->
+    <section id="home-page">
+      <img id="personal-image" src="images/person.jpg" alt="" />
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Md Abdur Rahim</h1>
+        <p>
+          Passionate about coding, solving challenges, developing software, and
+          crafting dynamic web applications.
+        </p>
+        <button
+          type="button"
+          onclick="window.location='mailto:marahim34@gmail.com'"
+        >
+          Hire Me
+        </button>
+      </div>
+    </section>
+
+    <script src="js/portfolio.js"></script>
+  </body>
+</html>
