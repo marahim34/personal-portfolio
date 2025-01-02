@@ -13,10 +13,12 @@
         <nav id="navbar">
           <ul>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#fun-facts">Fun Facts</a></li>
             <li><a href="#work-experience">Work Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#fun-facts">Fun Facts</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -25,10 +27,12 @@
         <nav class="toggle-entry">
           <ul>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#fun-facts">Fun Facts</a></li>
             <li><a href="#work-experience">Work Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#fun-facts">Fun Facts</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -44,14 +48,23 @@
           Passionate about coding, solving challenges, developing software, and
           crafting dynamic web applications.
         </p>
-        <button
-          type="button"
-          onclick="window.location='mailto:marahim34@gmail.com'"
-        >
-          Hire Me
-        </button>
+        <div class="button-group">
+          <button
+            type="button"
+            onclick="window.open('/pdf/Rahim_Md_Abdur.pdf')"
+          >
+            Download Resume
+          </button>
+          <button
+            type="button"
+            onclick="window.location='mailto:marahim34@gmail.com'"
+          >
+            Hire Me
+          </button>
+        </div>
       </div>
     </section>
+
     <!-- About me -->
     <section id="about">
       <h1><span>&lt;/about me&gt;</span></h1>
@@ -133,10 +146,8 @@
             <li onclick="showExperience('freelance')" class="active">
               Freelance Programmer
             </li>
-            <li onclick="showExperience('trust-bank')">Trust Bank Limited</li>
-            <li onclick="showExperience('sesame')">
-              Sesame Workshop Bangladesh
-            </li>
+            <li onclick="showExperience('trust-bank')">Trust Bank PLC</li>
+            <li onclick="showExperience('sesame')">Sesame Workshop</li>
             <li onclick="showExperience('brac')">BRAC University</li>
           </ul>
         </div>
@@ -168,6 +179,7 @@
           </div>
           <div id="sesame" class="experience-details">
             <h3>Research Coordinator</h3>
+            <p>Bangladesh Chapter</p>
             <p>Sep 2013 - May 2014</p>
             <ul>
               <li>Led research, monitoring, and evaluation activities</li>
@@ -194,35 +206,489 @@
       </div>
     </section>
 
+    <!-- Skills -->
+
+    <section id="skills">
+      <h1>&lt;/skills&gt;</h1>
+      <div class="skills-grid">
+        <!-- Left Column: Languages -->
+        <div class="skills-column">
+          <div>
+            <h4>Languages:</h4>
+            <div class="skills-group">
+              <div class="skill-item">
+                <img
+                  src="images/languages/c-original.svg"
+                  alt="C"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 70%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/languages/cplusplus-original.svg"
+                  alt="C++"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 70%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/languages/java-original.svg"
+                  alt="Java"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 50%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/languages/python-original.svg"
+                  alt="Python"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 50%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/languages/javascript-original.svg"
+                  alt="JavaScript"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 70%">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle Column: Databases and Frameworks -->
+        <div class="skills-column">
+          <div>
+            <h4>Databases:</h4>
+            <div class="skills-group">
+              <div class="skill-item">
+                <img
+                  src="images/databases/mysql-original-wordmark.svg"
+                  alt="MySQL"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 75%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/databases/mongodb-original-wordmark.svg"
+                  alt="MongoDB"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 75%">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>Frameworks:</h4>
+            <div class="skills-group">
+              <div class="skill-item">
+                <img
+                  src="images/Frameworks/react-original-wordmark.svg"
+                  alt="React"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 65%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/Frameworks/express-original-wordmark.svg"
+                  alt="ExpressJS"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 65%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/Frameworks/nodejs-original-wordmark.svg"
+                  alt="Node.js"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 60%">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Tools and Platforms -->
+        <div class="skills-column">
+          <div>
+            <h4>Tools and Platforms:</h4>
+            <div class="skills-group">
+              <div class="skill-item">
+                <img
+                  src="images/Tools/git-original.svg"
+                  alt="Git"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 90%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/Tools/vscode-original.svg"
+                  alt="VS Code"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 95%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/Tools/github-original.svg"
+                  alt="GitHub"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 85%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/Tools/npm-original-wordmark.svg"
+                  alt="npm"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 70%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/Tools/css3-original-wordmark.svg"
+                  alt="CSS"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 90%">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="images/Tools/html5-original-wordmark.svg"
+                  alt="HTML"
+                  width="40"
+                  height="40"
+                />
+                <div class="progress-bar" style="--progress: 85%">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications and Academic Qualifications -->
+
+    <section id="education">
+      <h1>&lt;/education&gt;</h1>
+      <div id="education">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Tampere University of Applied Sciences</h3>
+              <p><strong>Bachelor of Software Engineering</strong></p>
+              <p>&nbsp;August 2024 - July 2028</p>
+              <p>&nbsp;Tampere, Finland</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Tampere University</h3>
+              <p><strong>Master of Social Sciences</strong></p>
+              <p>&nbsp;January 2022 - November 2023</p>
+              <p>&nbsp;CGPA: 4.00</p>
+              <p>&nbsp;Tampere, Finland</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1>&lt;/projects&gt;</h1>
+      <div class="featured-projects">
+        <!-- Featured Project 1 -->
+        <div class="project-item">
+          <div class="project-image">
+            <img
+              src="images/projects/geogenie.netlify.app_(Nest Hub Max).png"
+              alt="GeoGenie"
+            />
+          </div>
+          <div class="project-details">
+            <p class="featured-label">Featured Project</p>
+            <h3>GeoGenie</h3>
+            <p class="project-description">
+              A simple yet powerful tool designed to calculate the area of
+              various geometric shapes
+            </p>
+            <div class="tech-stack">Tailwind | JavaScript</div>
+            <div class="project-links">
+              <a href="https://geogenie.netlify.app/" target="_blank">Visit</a>
+              <a
+                href="https://github.com/marahim34/JavaScript-Recap/tree/main/06_DOM_GEOMETRY"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Project 2 -->
+        <div class="project-item alternate">
+          <div class="project-image">
+            <img
+              src="images/projects/kapuut-quiz.netlify.app_.png"
+              alt="Audrix Project"
+            />
+          </div>
+          <div class="project-details">
+            <p class="featured-label">Featured Project</p>
+            <h3>Kapuut</h3>
+            <p class="project-description">
+              Kaputt! is a quiz-based learning platform that makes learners to
+              drive into the knowledge of front-end development.
+            </p>
+            <div class="tech-stack">JavaScript | HTML | CSS</div>
+            <div class="project-links">
+              <a target="_blank" href="https://kapuut-quiz.netlify.app/"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/marahim34/kapuut-quiz-crackers"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Project 3 -->
+        <div class="project-item">
+          <div class="project-image">
+            <img
+              src="images/projects/ema-john-simple-510a2.web.app_ (1).png"
+              alt="Ema-John"
+            />
+          </div>
+          <div class="project-details">
+            <p class="featured-label">Featured Project</p>
+            <h3>Ema-John</h3>
+            <p class="project-description">
+              A simple e-commerce platform for consumer items.
+            </p>
+            <div class="tech-stack">JavaScript | Firebase | CSS</div>
+            <div class="project-links">
+              <a href="https://ema-john-simple-510a2.web.app/">Visit</a>
+              <a href="https://github.com/marahim34/ema-john-simple-with-auth"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Project 4 -->
+        <div class="project-item alternate">
+          <div class="project-image">
+            <img
+              src="images/projects/dragon-news-adb60.web.app_.png"
+              alt="dragon-news"
+            />
+          </div>
+          <div class="project-details">
+            <p class="featured-label">Featured Project</p>
+            <h3>Dragon News</h3>
+            <p class="project-description">An online news portal.</p>
+            <div class="tech-stack">JavaScript | React</div>
+            <div class="project-links">
+              <a href="https://dragon-news-adb60.web.app/" target="_blank"
+                >Visit</a
+              >
+              <a href="https://github.com/marahim34/dragon-news" target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>&lt;/other noteworthy projects></h2>
+      <div class="noteworthy-projects">
+        <!-- Noteworthy Project 1 -->
+        <div class="noteworthy-item">
+          <h4>Reaction Game</h4>
+          <p>A reaction game that responds to the click of shapes.</p>
+          <div class="tech-stack">JavaScript | HTML</div>
+          <div class="project-links">
+            <a
+              href="A reaction game that responds to the click of shapes."
+              target="_blank"
+              >Website</a
+            >
+            <a
+              href="https://github.com/tamk-5G00DL96-3011/week-49-javascript-and-dom-marahim34/tree/main/ch4"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Noteworthy Project 2 -->
+        <div class="noteworthy-item">
+          <h4>Multiplication Game</h4>
+          <p>A simple multiplication game</p>
+          <div class="tech-stack">JavaScript | HTML | CSS</div>
+          <div class="project-links">
+            <a
+              href="https://multiplication-game-marahim.netlify.app/"
+              target="_blank"
+              >Website</a
+            >
+            <a
+              href="https://github.com/tamk-5G00DL96-3011/week-49-javascript-and-dom-marahim34/tree/main/ch5"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Noteworthy Project 3 -->
+        <div class="noteworthy-item">
+          <h4>Guess Game</h4>
+
+          <p>
+            A simple browser-based guessing game where users try to guess a
+            randomly selected number of fingers (between 1 and 5) being "held
+            up" by the program.
+          </p>
+          <div class="tech-stack">JavaScript | HTML</div>
+          <div class="project-links">
+            <a
+              href="https://app.netlify.com/sites/guess-game-marahim/overview"
+              target="_blank"
+              >Website</a
+            >
+            <a
+              href="https://github.com/tamk-5G00DL96-3011/week-49-javascript-and-dom-marahim34/tree/main/ch3"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Fun facts -->
     <section id="fun-facts">
       <h1>&lt;/fun facts&gt;</h1>
-      <ul>
-        <li>
-          I began my coding journey with JavaScript, but C++ has become my
-          favorite language for solving complex challenges.
-        </li>
-        <li>
-          Once a social scientist, I transitioned into programming and found my
-          true passion in writing code and solving problems.
-        </li>
-        <li>
-          Living in Finland, I enjoy fishing by its serene lakes, finding peace
-          and inspiration in nature.
-        </li>
-        <li>
-          As a new father, I am learning to balance life, coding, and
-          parenthood—a challenge that is as rewarding as it is demanding.
-        </li>
-        <li>
-          Debugging code feels like solving a thrilling mystery—each bug fixed
-          is a small victory.
-        </li>
-        <li>
-          Exploring nature trails and capturing Finland’s breathtaking forests
-          has become one of my favorite ways to relax and recharge.
-        </li>
-      </ul>
+      <div id="facts">
+        <ul>
+          <li>
+            I began my coding journey with JavaScript, but C++ has become my
+            favorite language for solving complex challenges.
+          </li>
+          <li>
+            Once a social scientist, I transitioned into programming and found
+            my true passion in writing code and solving problems.
+          </li>
+          <li>
+            Living in Finland, I enjoy fishing by its serene lakes, finding
+            peace and inspiration in nature.
+          </li>
+          <li>
+            As a new father, I am learning to balance life, coding, and
+            parenthood—a challenge that is as rewarding as it is demanding.
+          </li>
+          <li>
+            Debugging code feels like solving a thrilling mystery—each bug fixed
+            is a small victory.
+          </li>
+          <li>
+            Exploring nature trails and capturing Finland’s breathtaking forests
+            has become one of my favorite ways to relax and recharge.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>&lt;/contact></h1>
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form>
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit">SEND</button>
+          </form>
+        </div>
+        <!-- Map -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.2243342155125!2d23.8511711!3d61.4470005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edfb07cc3e67d%3A0x2600b5523c196291!2sHervanta%2C%2033720%20Tampere%2C%20Finland!5e0!3m2!1sen!2sfi!4v1697126509487!5m2!1sen!2sfi"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </section>
 
     <script src="js/portfolio.js"></script>
